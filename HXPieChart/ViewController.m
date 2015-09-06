@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "HXPieChartView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) HXPieChartView *pieChartView;
 
 @end
 
@@ -17,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    _pieChartView = [HXPieChartView alloc] initWithFrame: CGRectMake(0, 100, ,)
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,6 +15,8 @@
 		F28F26D11B91D63A000EAB48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28F26D01B91D63A000EAB48 /* Images.xcassets */; };
 		F28F26D41B91D63A000EAB48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28F26D21B91D63A000EAB48 /* LaunchScreen.xib */; };
 		F28F26E01B91D63A000EAB48 /* HXPieChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26DF1B91D63A000EAB48 /* HXPieChartTests.m */; };
+		F28F26EB1B91D665000EAB48 /* HXPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26EA1B91D665000EAB48 /* HXPieChartView.m */; };
+		F28F26EE1B91D85F000EAB48 /* UIView+CoordinateRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		F28F26D91B91D63A000EAB48 /* HXPieChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXPieChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28F26DE1B91D63A000EAB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28F26DF1B91D63A000EAB48 /* HXPieChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXPieChartTests.m; sourceTree = "<group>"; };
+		F28F26E91B91D665000EAB48 /* HXPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPieChartView.h; sourceTree = "<group>"; };
+		F28F26EA1B91D665000EAB48 /* HXPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPieChartView.m; sourceTree = "<group>"; };
+		F28F26EC1B91D85F000EAB48 /* UIView+CoordinateRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoordinateRelationship.h"; sourceTree = "<group>"; };
+		F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoordinateRelationship.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 				F28F26C51B91D63A000EAB48 /* AppDelegate.m */,
 				F28F26CA1B91D63A000EAB48 /* ViewController.h */,
 				F28F26CB1B91D63A000EAB48 /* ViewController.m */,
+				F28F26E91B91D665000EAB48 /* HXPieChartView.h */,
+				F28F26EA1B91D665000EAB48 /* HXPieChartView.m */,
+				F28F26EC1B91D85F000EAB48 /* UIView+CoordinateRelationship.h */,
+				F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */,
 				F28F26CD1B91D63A000EAB48 /* Main.storyboard */,
 				F28F26D01B91D63A000EAB48 /* Images.xcassets */,
 				F28F26D21B91D63A000EAB48 /* LaunchScreen.xib */,
@@ -222,9 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28F26EE1B91D85F000EAB48 /* UIView+CoordinateRelationship.m in Sources */,
 				F28F26C61B91D63A000EAB48 /* AppDelegate.m in Sources */,
 				F28F26C91B91D63A000EAB48 /* HXPieChart.xcdatamodeld in Sources */,
 				F28F26CC1B91D63A000EAB48 /* ViewController.m in Sources */,
+				F28F26EB1B91D665000EAB48 /* HXPieChartView.m in Sources */,
 				F28F26C31B91D63A000EAB48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
