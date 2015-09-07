@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HXPieModel.h"
 
 @interface HXPieChartView : UIView
 
-
+// 数据源
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end

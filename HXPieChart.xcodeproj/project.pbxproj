@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F276C8DD1B9D843F002FF462 /* HXPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F276C8DC1B9D843F002FF462 /* HXPieModel.m */; };
+		F276C8DF1B9D84AC002FF462 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F276C8DE1B9D84AC002FF462 /* UIKit.framework */; };
+		F276C8E11B9D84B6002FF462 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F276C8E01B9D84B6002FF462 /* CoreGraphics.framework */; };
 		F28F26C31B91D63A000EAB48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26C21B91D63A000EAB48 /* main.m */; };
 		F28F26C61B91D63A000EAB48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26C51B91D63A000EAB48 /* AppDelegate.m */; };
 		F28F26C91B91D63A000EAB48 /* HXPieChart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F28F26C71B91D63A000EAB48 /* HXPieChart.xcdatamodeld */; };
@@ -30,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F276C8DB1B9D843F002FF462 /* HXPieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXPieModel.h; sourceTree = "<group>"; };
+		F276C8DC1B9D843F002FF462 /* HXPieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPieModel.m; sourceTree = "<group>"; };
+		F276C8DE1B9D84AC002FF462 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F276C8E01B9D84B6002FF462 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F28F26BD1B91D63A000EAB48 /* HXPieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXPieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28F26C11B91D63A000EAB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28F26C21B91D63A000EAB48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F276C8E11B9D84B6002FF462 /* CoreGraphics.framework in Frameworks */,
+				F276C8DF1B9D84AC002FF462 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +80,8 @@
 		F28F26B41B91D63A000EAB48 = {
 			isa = PBXGroup;
 			children = (
+				F276C8E01B9D84B6002FF462 /* CoreGraphics.framework */,
+				F276C8DE1B9D84AC002FF462 /* UIKit.framework */,
 				F28F26BF1B91D63A000EAB48 /* HXPieChart */,
 				F28F26DC1B91D63A000EAB48 /* HXPieChartTests */,
 				F28F26BE1B91D63A000EAB48 /* Products */,
@@ -95,6 +106,8 @@
 				F28F26CB1B91D63A000EAB48 /* ViewController.m */,
 				F28F26E91B91D665000EAB48 /* HXPieChartView.h */,
 				F28F26EA1B91D665000EAB48 /* HXPieChartView.m */,
+				F276C8DB1B9D843F002FF462 /* HXPieModel.h */,
+				F276C8DC1B9D843F002FF462 /* HXPieModel.m */,
 				F28F26EC1B91D85F000EAB48 /* UIView+CoordinateRelationship.h */,
 				F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */,
 				F28F26CD1B91D63A000EAB48 /* Main.storyboard */,
@@ -238,6 +251,7 @@
 				F28F26CC1B91D63A000EAB48 /* ViewController.m in Sources */,
 				F28F26EB1B91D665000EAB48 /* HXPieChartView.m in Sources */,
 				F28F26C31B91D63A000EAB48 /* main.m in Sources */,
+				F276C8DD1B9D843F002FF462 /* HXPieModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +313,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,7 +358,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -434,6 +448,7 @@
 				F28F26E51B91D63A000EAB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F28F26E61B91D63A000EAB48 /* Build configuration list for PBXNativeTarget "HXPieChartTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +457,7 @@
 				F28F26E81B91D63A000EAB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
