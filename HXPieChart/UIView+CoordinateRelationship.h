@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface UIView (CoordinateRelationship)
 
@@ -70,6 +72,11 @@
  *  右下角坐标
  */
 @property (nonatomic, assign) CGPoint rightBottom;
+
+/**
+ *  高度和宽度构成的尺寸结构体
+ */
+@property (nonatomic, assign)  CGSize size;
 
 /**
  *  @brief:  设置左边的值
@@ -237,5 +244,63 @@
  *  @return: CGPoint 类型的值
  */
 - (CGPoint)rightBottom;
+
+/**
+ *  @brief:  设置尺寸信息
+ *  @param:  size 为新的尺寸信息
+ *  @return: 空
+ */
+- (void)setSize:(CGSize)size;
+
+/**
+ *  @brief:  获取尺寸信息
+ *  @param:  空
+ *  @return: CGSize 类型的值
+ */
+- (CGSize)size;
+
+#pragma mark---坐标调整, 即只调整改属性, 其它不相干属性不变
+
+/**
+ *  @brief:  调整左边
+ *  @param:  left 是新的左边, 如果left比原右边还右, 则以平移为结果, 否则就是右边不变只调整左边
+ *  @return: 空
+ */
+- (void) scaleLeft: (CGFloat) left;
+
+/**
+ *  @brief:  调整右边
+ *  @param:  right 是新的右边, 如果right比原左边还左, 则以平移为结果, 否则就是右边变左边不变
+ *  @return: 空
+ */
+- (void) scaleRight: (CGFloat) right;
+
+/**
+ *  @brief:  调整上边
+ *  @param:  top 是新的上边, 如果top比原底边还低, 则以平移为结果, 否则就是新的上边变, 底部不变
+ *  @return: 空
+ */
+- (void) scaleTop: (CGFloat) top;
+
+/**
+ *  @brief:  调整底部
+ *  @param:  bottom 是新的底部, 如果bottom比原上边还上, 则以平移为结果, 否则就是新的底部, 上边不变
+ *  @return: 空
+ */
+- (void) scaleBottom: (CGFloat) bottom;
+
+/**
+ *  @brief:  调整值
+ *  @param:   value 是新的值, key 是属性
+ *  @return: 空
+ */
+- (void) scaleValue: (id)value forKey: (NSString *)key;
+
+/**
+ *  @brief:  调整边值,即上下左右
+ *  @param:  value 是新的值, key 是属性
+ *  @return: 空
+ */
+- (void) scaleEdgeValue: (CGFloat)value forKey: (NSString *)key;
 
 @end
