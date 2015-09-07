@@ -22,10 +22,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.view scaleValue: [NSNumber numberWithFloat: 128] forKey: @"left"];
-    [self.view scaleEdgeValue: 100 forKey: @"right"];
-    self.view.backgroundColor = [UIColor redColor];
-    NSLog(@"%lf", self.view.left);
+    _pieChartView = [[HXPieChartView alloc] initWithFrame: CGRectMake(100, 100, 150, 150)];
+    
+    [_pieChartView scaleEdgeValue: 10 forKey: @"left"];
+    [_pieChartView scaleEdgeValue: self.view.width - 10 forKey: @"right"];
+    _pieChartView.height += 100;
+    _pieChartView.top = 200;
+    [self.view addSubview: _pieChartView];
+    
+
+    NSLog(@"%lf", _pieChartView.left);
 }
 
 - (void)didReceiveMemoryWarning {
