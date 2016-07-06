@@ -20,6 +20,7 @@
 		F28F26E01B91D63A000EAB48 /* HXPieChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26DF1B91D63A000EAB48 /* HXPieChartTests.m */; };
 		F28F26EB1B91D665000EAB48 /* HXPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26EA1B91D665000EAB48 /* HXPieChartView.m */; };
 		F28F26EE1B91D85F000EAB48 /* UIView+CoordinateRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */; };
+		F2B2B6911D2C9FF300F7F0D7 /* UIColor+UtilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2B6901D2C9FF300F7F0D7 /* UIColor+UtilityTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		F28F26EA1B91D665000EAB48 /* HXPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXPieChartView.m; sourceTree = "<group>"; };
 		F28F26EC1B91D85F000EAB48 /* UIView+CoordinateRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoordinateRelationship.h"; sourceTree = "<group>"; };
 		F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoordinateRelationship.m"; sourceTree = "<group>"; };
+		F2B2B68F1D2C9FF300F7F0D7 /* UIColor+UtilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UtilityTool.h"; sourceTree = "<group>"; };
+		F2B2B6901D2C9FF300F7F0D7 /* UIColor+UtilityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UtilityTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				F276C8DC1B9D843F002FF462 /* HXPieModel.m */,
 				F28F26EC1B91D85F000EAB48 /* UIView+CoordinateRelationship.h */,
 				F28F26ED1B91D85F000EAB48 /* UIView+CoordinateRelationship.m */,
+				F2B2B68F1D2C9FF300F7F0D7 /* UIColor+UtilityTool.h */,
+				F2B2B6901D2C9FF300F7F0D7 /* UIColor+UtilityTool.m */,
 				F28F26CD1B91D63A000EAB48 /* Main.storyboard */,
 				F28F26D01B91D63A000EAB48 /* Images.xcassets */,
 				F28F26D21B91D63A000EAB48 /* LaunchScreen.xib */,
@@ -189,7 +194,7 @@
 		F28F26B51B91D63A000EAB48 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = huangxiong;
 				TargetAttributes = {
 					F28F26BC1B91D63A000EAB48 = {
@@ -247,6 +252,7 @@
 			files = (
 				F28F26EE1B91D85F000EAB48 /* UIView+CoordinateRelationship.m in Sources */,
 				F28F26C61B91D63A000EAB48 /* AppDelegate.m in Sources */,
+				F2B2B6911D2C9FF300F7F0D7 /* UIColor+UtilityTool.m in Sources */,
 				F28F26C91B91D63A000EAB48 /* HXPieChart.xcdatamodeld in Sources */,
 				F28F26CC1B91D63A000EAB48 /* ViewController.m in Sources */,
 				F28F26EB1B91D665000EAB48 /* HXPieChartView.m in Sources */,
@@ -314,6 +320,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -381,6 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HXPieChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.new-life.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -391,6 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HXPieChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.new-life.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -409,6 +418,7 @@
 				);
 				INFOPLIST_FILE = HXPieChartTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.new-life.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXPieChart.app/HXPieChart";
 			};
@@ -424,6 +434,7 @@
 				);
 				INFOPLIST_FILE = HXPieChartTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.new-life.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HXPieChart.app/HXPieChart";
 			};

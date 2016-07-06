@@ -11,10 +11,6 @@
 #import "UIView+CoordinateRelationship.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 
 @interface HXPieChartView : UIView
 
@@ -32,5 +28,15 @@
 
 // 线宽
 @property (nonatomic, assign) CGFloat lineWidth;
+
+
+/**
+ *  @author huangxiong, 2016/07/06 09:39:40
+ *
+ *  @brief 绘制扇形图表
+ *
+ *  @since 1.0
+ */
+- (void) drawPieChat;
 
 @end

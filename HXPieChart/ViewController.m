@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "HXPieChartView.h"
-
+#import "UIColor+UtilityTool.h"
 @interface ViewController ()
 
 // 数据
@@ -25,23 +25,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-<<<<<<< HEAD
+    
     [self getPieChartData];
     
     _pieChartView = [[HXPieChartView alloc] initWithFrame: CGRectMake(0, 100, 255, 200)];
-    _pieChartView.lineWidth = 55;
+    _pieChartView.lineWidth = 100;
     _pieChartView.dataArray = _pieData;
     _pieChartView.startAngle = M_PI_2 * 3;
     _pieChartView.circleCenter = CGPointMake(_pieChartView.width / 2, _pieChartView.height / 2);
-    _pieChartView.radius = 95 - 55 / 2;
-=======
-    _pieChartView = [[HXPieChartView alloc] initWithFrame: CGRectMake(100, 100, 150, 250)];
-    _pieChartView.backgroundColor = [UIColor whiteColor];
-    [_pieChartView scaleEdgeValue: 10 forKey: @"left"];
-    [_pieChartView scaleEdgeValue: self.view.width - 10 forKey: @"right"];
-    _pieChartView.height += 100;
-    _pieChartView.top = 200;
->>>>>>> origin/master
+    _pieChartView.radius = 50;
+
     [self.view addSubview: _pieChartView];
     
     HXPieModel *model1 = [[HXPieModel alloc] init];
@@ -66,7 +59,7 @@
     [_pieChartView.dataArray addObject: model4];
     NSLog(@"%lf", _pieChartView.height);
     
-    [_pieChartView setNeedsDisplay];
+    [_pieChartView drawPieChat];
 }
 
 - (void)didReceiveMemoryWarning {
